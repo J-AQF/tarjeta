@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tarjetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- formulario -->
+        <div class="formulario">
+            <h2>Datos de la persona</h2>
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ej. Juan Pérez">
+
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" placeholder="Ej. Desarrollador">
+
+                <label for="colorFavorito">Color favorito:</label>
+                <input type="color" id="colorFavorito" value="#ffcc00">
+
+                <label for="imagen">Imagen de perfil (opcional):</label>
+                <input type="file" id="imagen" accept="image/*">
+
+                <button type="button" id="generar">Generar</button>
+            </form>
+        </div>
+
+        <!-- vista previa de la tarjeta -->
+        <div class="preview">
+            <h2>Vista previa</h2>
+            <div class="tarjeta" id="tarjetaPreview">
+                <div class="avatar">
+                    <img id="previewImagen" src="#" alt="Avatar" style="display: none;">
+                </div>
+                <h3 id="previewNombre">Nombre</h3>
+                <p id="previewCargo">Cargo</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galería -->
+    <div class="galeria">
+        <h2>Galería</h2>
+        <div id="galeriaContainer" class="galeria-container"></div>
+    </div>
+
+
+</body>
+</html>
